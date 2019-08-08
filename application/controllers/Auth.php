@@ -58,7 +58,7 @@ class Auth extends CI_Controller
             'class' => 'form-control',
             'type' => 'password',
         ];
-        $this->_render_page('administrator/auth' . DIRECTORY_SEPARATOR . 'login', $this->data);
+        $this->_render_page('auth' . DIRECTORY_SEPARATOR . 'login', $this->data);
 	}
 
 	/**
