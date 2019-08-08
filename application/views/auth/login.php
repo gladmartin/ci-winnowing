@@ -19,7 +19,7 @@
 <body class="hold-transition login-page">
     <div class="login-box">
         <div class="login-logo">
-            <a href="../../index2.html"><b>Login </b><?php $this->starter_ci->app_name() ?></a>
+            <a href="#"><b>Login </b><?php $this->starter_ci->app_name() ?></a>
         </div>
         <div class="login-box-body">
             <p class="login-box-msg">Silahkan login untuk memulai sesi anda</p>
