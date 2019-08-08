@@ -23,7 +23,9 @@
         </div>
         <div class="login-box-body">
             <p class="login-box-msg">Silahkan login untuk memulai sesi anda</p>
-            <?php echo $message;?>
+            <?php if ($this->session->flashdata('message')) : ?>
+                <div class="alert alert-danger"><?php echo $this->session->flashdata('message'); ?></div>
+            <?php endif; ?>
             <?php echo form_open();?>
                 <div class="form-group has-feedback <?php echo has_error_form('identity'); ?>">
                     <?php echo form_input($identity);?>
