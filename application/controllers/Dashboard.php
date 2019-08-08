@@ -7,7 +7,7 @@ class Dashboard extends CI_Controller {
         parent::__construct();
         if (!$this->ion_auth->logged_in())
         {
-            redirect('administrator/auth/login', 'refresh');
+            redirect('auth/login', 'refresh');
             return;
         }
     }
@@ -15,6 +15,6 @@ class Dashboard extends CI_Controller {
 	public function index()
 	{
         $this->layout->set_title('Dashboard');
-		$this->layout->load('administrator/template', 'administrator/dashboard/index');
+		$this->layout->load('template', 'dashboard/index');
 	}
 }

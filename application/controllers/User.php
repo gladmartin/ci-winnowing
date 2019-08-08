@@ -7,7 +7,7 @@ class User extends CI_Controller {
         parent::__construct();
         if (!$this->ion_auth->logged_in())
         {
-            redirect('administrator/auth/login', 'refresh');
+            redirect('auth/login', 'refresh');
             return;
         }
 		$this->lang->load('auth');
@@ -25,7 +25,7 @@ class User extends CI_Controller {
         $this->layout->js('admin/bower_components/datatables.net/js/jquery.dataTables.min.js');
         $this->layout->js('admin/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js');
         $this->layout->js('js/script.js');
-		$this->layout->load('administrator/template', 'administrator/user/index', $data);
+		$this->layout->load('template', 'user/index', $data);
     }
     
 	public function tambah()
@@ -63,7 +63,7 @@ class User extends CI_Controller {
 		if ($this->form_validation->run() === TRUE && $this->ion_auth->register($identity, $password, $email, $additional_data, $group))
 		{
 			$this->session->set_flashdata('message', $this->ion_auth->messages());
-			redirect("administrator/user", 'refresh');
+			redirect("user", 'refresh');
 		}
 		else
 		{
@@ -76,7 +76,7 @@ class User extends CI_Controller {
             }
             $data['groups'] = $option;
             $this->layout->set_title('Tambah user');
-		    $this->layout->load('administrator/template', 'administrator/user/tambah', $data);
+		    $this->layout->load('template', 'user/tambah', $data);
 		}
     }
     
