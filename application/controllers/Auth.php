@@ -34,12 +34,12 @@ class Auth extends CI_Controller
 			if ($this->ion_auth->login($identity, $password, $remember))
 			{
 				$this->session->set_flashdata('message', $this->ion_auth->messages());
-				redirect('administrator/dashboard', 'refresh');
+				redirect('dashboard', 'refresh');
 			}
 			else
 			{
 				$this->session->set_flashdata('message', $this->ion_auth->errors());
-				redirect('administrator/auth/login', 'refresh');
+				redirect('auth/login', 'refresh');
             }
             return;
         }
