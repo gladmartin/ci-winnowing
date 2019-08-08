@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Starter</title>
+  <title>TA WINNOWING</title>
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="stylesheet" href="<?php echo base_url('assets/admin/'); ?>bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="<?php echo base_url('assets/admin/'); ?>bower_components/font-awesome/css/font-awesome.min.css">
@@ -42,7 +42,7 @@ desired effect
 |               | sidebar-mini                            |
 |---------------------------------------------------------|
 -->
-<body class="hold-transition skin-green sidebar-mini">
+<body class="hold-transition skin-green layout-top-nav ">
 
 
 <div class="wrapper">
@@ -52,16 +52,16 @@ desired effect
       <?php include "include/_main_header.php"; ?>
   </header>
   
-  <aside class="main-sidebar">
-      <?php include "include/_main_sidebar.php"; ?>
-  </aside>
-
   <div class="content-wrapper">
+    <div class="container">
       <?php echo $contents; ?>
+    </div>
   </div>
 
   <footer class="main-footer">
-      <?php include "include/_main_footer.php"; ?>
+    <div class="container">
+    <?php include "include/_main_footer.php"; ?>
+    </div>
   </footer>
 </div>
 
