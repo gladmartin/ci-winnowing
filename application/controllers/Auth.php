@@ -47,7 +47,8 @@ class Auth extends CI_Controller
         $this->data['message'] = $this->session->flashdata('message');
         $this->data['identity'] = [
             'name' => 'identity',
-            'id' => 'identity',
+			'id' => 'identity',
+			'placeholder' => 'Email',
             'type' => 'text',
             'class' => 'form-control',
             'value' => set_value('identity'),
@@ -55,6 +56,7 @@ class Auth extends CI_Controller
         $this->data['password'] = [
             'name' => 'password',
             'id' => 'password',
+			'placeholder' => 'Password',
             'class' => 'form-control',
             'type' => 'password',
         ];

@@ -28,12 +28,12 @@
                 <div class="form-group has-feedback <?php echo has_error_form('identity'); ?>">
                     <?php echo form_input($identity);?>
                     <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
-                    <span class="help-block"><?php echo form_error('identity') ?></span>
+                    <span class="help-block small"><?php echo form_error('identity') ?></span>
                 </div>
                 <div class="form-group has-feedback <?php echo has_error_form('password'); ?>">
                     <?php echo form_input($password);?>
                     <span class="glyphicon glyphicon-lock form-control-feedback"></span>                    
-                    <span class="help-block"><?php echo form_error('password') ?></span>
+                    <span class="help-block small"><?php echo form_error('password') ?></span>
                 </div>
                 <div class="row">
                     <div class="col-xs-8">
@@ -52,7 +52,6 @@
                 </div>
             <?php echo form_close();?>
 
-            <a href="#">I forgot my password</a><br>
         </div>
         <!-- /.login-box-body -->
     </div>
