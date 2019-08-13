@@ -19,7 +19,7 @@
                 <div class="box-header">            
                     <h3 class="box-title">List user</h3>
                     <div class="pull-right box-tools">
-                        <a class="btn btn-sm btn-success" href="<?php echo site_url('administrator/user/tambah') ?>">Tambah user baru</a>
+                        <a class="btn btn-sm btn-success" href="<?php echo site_url('user/tambah') ?>">Tambah user baru</a>
                     </div>
                 </div>
                 <div class="box-body table-responsive">
@@ -50,7 +50,7 @@
                                     <?php echo $user->active ? anchor("user/nonaktifkan/".$user->id, "Aktif") : anchor("user/aktifkan/".$user->id, "Nonaktif") ?>
                                 </td>
                                 <td>
-                                    <a href="<?php echo site_url('administrator/user/hapus/') . $user->id ?>" class="btn btn-sm btn-danger">Hapus</a>
+                                    <a href="<?php echo site_url('user/hapus/') . $user->id ?>" class="btn btn-sm btn-danger">Hapus</a>
                                     <button class="btn btn-sm btn-primary">Detail</button>
                                 </td>
                             </tr>
