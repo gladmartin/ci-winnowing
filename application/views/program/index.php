@@ -4,7 +4,7 @@
         <?php $this->layout->get_title(); ?>
     </h1>
     <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Tes Kemiripan</a></li>
+        <li><a href="#">Tes Kemiripan</a></li>
         <li class="active">Index</li>
     </ol>
 </section>

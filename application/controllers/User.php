@@ -84,7 +84,7 @@ class User extends CI_Controller {
     {
         $this->ion_auth->delete_user($id);
         $this->session->set_flashdata('message', $this->ion_auth->messages());
-        redirect("administrator/user", 'refresh');
+        redirect("user", 'refresh');
     }
 
 }
