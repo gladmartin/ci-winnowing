@@ -38,7 +38,7 @@
                 <!-- Menu Footer-->
                 <li class="user-footer">
                   <div class="text-center">
-                    <a href="#" class="btn btn-default btn-flat">Keluar dari aplikasi</a>
+                    <a href="<?php echo site_url('auth/logout')?>" class="btn btn-default btn-flat">Keluar dari aplikasi</a>
                   </div>
                 </li>
               </ul>
